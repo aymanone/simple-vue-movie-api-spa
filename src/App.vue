@@ -9,7 +9,7 @@
     <router-view></router-view>
     
   
-    <img alt="Vue logo" src="./assets/logo.png">
+  
     
   </div>
 </template>
@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style>
+@import './assets/styles/bootstrap-4.1.1-dist/css/bootstrap.min.css';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

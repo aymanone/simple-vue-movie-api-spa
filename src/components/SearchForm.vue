@@ -2,7 +2,7 @@
 <div>
 <p>search for movie or series or just one episode by titel or imdb id</p>
 <form>
-<input type="text" placeholder="type your search" required>
+<input type="text" placeholder="type your search"  required>
 <label>search by title or id or general search &nbsp</label>
 <select name="search-by">
   <option value="t">title</option>
@@ -21,7 +21,7 @@
 <option value="">non determine</option>
 <option v-for="year in years" :value="year">{{year}}</option>
 </select>
-<button  v-on:click="search">search</button>
+<button  v-on:click="search" class="btn">search</button>
 </form>
 </div>
 </template>

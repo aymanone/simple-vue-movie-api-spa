@@ -5,7 +5,9 @@
  <SearchForm @make-the-search="makeSearch"></SearchForm>
  <div>
  <h1 v-if="falseResponse" style="color:red;"> no information found </h1>
- <Movie v-for="movie in movies" :movieInfo="movie"></Movie>
+ <div class="movies-container">
+ <Movie v-for="movie in movies" :movieInfo="movie" ></Movie>
+ </div>
  </div>
  
  </div>
@@ -59,3 +61,12 @@ this.falseResponse=true;
 };
 //methods etc
 </script>
+<style>
+.movies-container{
+ display:grid;
+ grid-template-columns:30% 30% 30%;
+ justify-items:streched;
+ justify-content:space-around;
+}
+
+</style>
