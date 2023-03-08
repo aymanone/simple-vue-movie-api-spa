@@ -33,7 +33,7 @@ makeSearch(data){
 this.movies=[];
 this.falseResponse=false;
 
-let request=`http://www.omdbapi.com/?apikey=${this.apiKey}&${data.searchBy}=${data.q}&type=${data.typeOfWork}&year=${data.year}`;
+let request=`https://www.omdbapi.com/?apikey=${this.apiKey}&${data.searchBy}=${data.q}&type=${data.typeOfWork}&year=${data.year}`;
 fetch(request).then((response)=>{
 console.log(response);
 
